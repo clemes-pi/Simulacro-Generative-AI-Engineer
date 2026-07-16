@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulacro · Databricks Certified Generative AI Engineer Associate</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#1e293b; --panel2:#273449; --border:#334155;
+    --text:#e2e8f0; --muted:#94a3b8; --accent:#ff3621; --accent2:#2563eb;
+    --ok:#22c55e; --okbg:#052e16; --bad:#ef4444; --badbg:#3f1212;
+    --gold:#f59e0b; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#1b2942,#0f172a 60%);color:var(--text);min-height:100vh}
+  .wrap{max-width:860px;margin:0 auto;padding:24px 18px 80px}
+  header.app{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .logo{width:38px;height:38px;border-radius:9px;background:var(--accent);display:grid;place-items:center;font-weight:800;color:#fff;font-size:18px;flex:none}
+  header.app h1{font-size:17px;margin:0;font-weight:700;line-height:1.2}
+  header.app p{margin:2px 0 0;font-size:12.5px;color:var(--muted)}
+  .lang-selector{position:fixed;top:20px;right:20px;display:flex;gap:8px;z-index:100}
+  .lang-btn{padding:8px 14px;border:1px solid var(--border);background:var(--panel);color:var(--text);border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;transition:.15s}
+  .lang-btn.active{background:var(--accent);border-color:var(--accent)}
+  .lang-btn:hover{border-color:var(--accent2)}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
+  .hide{display:none!important}
+
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+  .stat{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+  .stat b{display:block;font-size:24px}
+  .stat span{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .modes{display:grid;gap:14px}
+  .mode{display:flex;gap:14px;align-items:center;background:var(--panel);border:1px solid var(--border);
+    border-radius:14px;padding:18px;cursor:pointer;transition:.15s;text-align:left;color:inherit;width:100%;font:inherit}
+  .mode:hover{border-color:var(--accent2);transform:translateY(-1px);background:var(--panel2)}
+  .mode .ic{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;font-size:22px;flex:none}
+  .mode h3{margin:0 0 3px;font-size:15.5px}
+  .mode p{margin:0;font-size:12.5px;color:var(--muted)}
+  .mode:disabled{opacity:.45;cursor:not-allowed}
+
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .btn{border:none;border-radius:10px;padding:11px 18px;font-size:14px;font-weight:600;cursor:pointer;transition:.15s}
+  .btn:active{transform:scale(.98)}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-blue{background:var(--accent2);color:#fff}
+  .btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--border)}
+  .btn-ghost:hover{color:var(--text);border-color:var(--muted)}
+  .num-input{width:78px;background:var(--panel2);border:1px solid var(--border);color:var(--text);
+    border-radius:9px;padding:9px;font-size:15px;text-align:center}
+  label.fld{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+
+  .qbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;font-size:13px;color:var(--muted)}
+  .progress{height:6px;background:var(--panel2);border-radius:6px;overflow:hidden;margin-bottom:18px}
+  .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#ff7a5c);width:0;transition:.3s}
+  .timer{font-variant-numeric:tabular-nums;font-weight:700;color:var(--text)}
+  .timer.warn{color:var(--gold)}
+  .qmeta{font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+  .qtext{font-size:16.5px;line-height:1.5;margin:0 0 16px;font-weight:500}
+  .qtext .multi{display:inline-block;background:var(--accent2);color:#fff;font-size:10.5px;font-weight:700;
+    padding:2px 7px;border-radius:20px;vertical-align:middle;margin-left:6px}
+  pre.code{background:#0b1220;border:1px solid var(--border);border-radius:10px;padding:14px;overflow-x:auto;
+    font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13px;line-height:1.5;color:#d6e2f0;margin:0 0 16px;white-space:pre}
+  table.dt{border-collapse:collapse;margin:0 0 14px;font-size:13px;min-width:60%}
+  table.dt th,table.dt td{border:1px solid var(--border);padding:6px 12px;text-align:left}
+  table.dt th{background:var(--panel2);font-weight:700}
+  .opts{display:grid;gap:10px}
+  .opt{display:flex;gap:12px;align-items:flex-start;background:var(--panel2);border:1.5px solid var(--border);
+    border-radius:11px;padding:13px 15px;cursor:pointer;transition:.12s;font-size:14.5px;line-height:1.45}
+  .opt:hover{border-color:var(--accent2)}
+  .opt .key{font-weight:800;flex:none;width:22px;color:var(--muted)}
+  .opt .otext{min-width:0;overflow-x:auto}
+  .opt.sel{border-color:var(--accent2);background:#1e2f4d}
+  .opt.correct{border-color:var(--ok);background:var(--okbg)}
+  .opt.correct .key{color:var(--ok)}
+  .opt.wrong{border-color:var(--bad);background:var(--badbg)}
+  .opt.wrong .key{color:var(--bad)}
+  .opt.disabled{cursor:default}
+  .opt pre.code{margin:0}
+  .opt table.dt{margin:0}
+  .feedback{margin-top:16px;border-radius:12px;padding:15px 16px;border:1px solid var(--border);background:var(--panel2)}
+  .feedback .head{font-weight:700;font-size:14.5px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+  .feedback.good .head{color:var(--ok)} .feedback.bad .head{color:var(--bad)}
+  .answers{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .abadge{font-size:12px;padding:5px 11px;border-radius:8px;background:var(--panel);border:1px solid var(--border)}
+  .abadge b{color:var(--text)}
+  .abadge.official b{color:#93c5fd}
+  .abadge.voted b{color:#86efac}
+  .expl{font-size:13.5px;line-height:1.55;color:#cbd5e1}
+  .expl b{color:var(--text)}
+  .nav{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
+
+  .score-big{font-size:52px;font-weight:800;text-align:center;line-height:1}
+  .score-sub{text-align:center;color:var(--muted);margin:6px 0 20px}
+  .ring{display:block;margin:0 auto 10px}
+  .review-item{border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:10px;font-size:13.5px}
+  .review-item .ri-q{margin-bottom:6px}
+  .pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px}
+  .pill.ok{background:var(--okbg);color:#86efac} .pill.bad{background:var(--badbg);color:#fca5a5}
+  .footer-note{text-align:center;color:var(--muted);font-size:11.5px;margin-top:26px}
+  .req-box{background:var(--panel2);border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0;font-size:13.5px;line-height:1.6}
+  .req-box h4{margin:0 0 8px;color:var(--accent);font-size:14px}
+  .req-box ul{margin:0;padding-left:20px;color:var(--muted)}
+  .req-box li{margin:4px 0}
+</style>
+</head>
+<body>
+
+<!-- Language Selector -->
+<div class="lang-selector">
+  <button class="lang-btn active" onclick="setLanguage('es')">ES</button>
+  <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+</div>
+
+<div class="wrap">
+  <header class="app">
+    <div class="logo">D</div>
+    <div>
+      <h1 id="app-title">Simulacro · Generative AI Engineer</h1>
+      <p id="app-subtitle">Databricks · banco de preguntas ExamTopics</p>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <section id="home">
+    <div id="load-error" class="warnbox hide">
+      ⚠ <span id="load-error-text">No se pudieron cargar las preguntas. Asegurate de que el archivo <b>qdata-genai.js</b> esté en la <b>misma carpeta</b> que este HTML.</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="st-total">0</b><span id="st-total-label">Preguntas</span></div>
+      <div class="stat"><b id="st-answered">0</b><span id="st-answered-label">Respondidas</span></div>
+      <div class="stat"><b id="st-failed">0</b><span id="st-failed-label">Falladas</span></div>
+    </div>
+    <div class="modes">
+      <button class="mode" onclick="startStudy()">
+        <div class="ic" style="background:#0b3a2e">📚</div>
+        <div><h3 id="study-mode-title">Modo estudio</h3><p id="study-mode-desc">Recorré todas las preguntas (mezcladas) con feedback y explicación al instante.</p></div>
+      </button>
+      <button class="mode" onclick="showExamSetup()">
+        <div class="ic" style="background:#3a1d0b">⏱️</div>
+        <div><h3 id="exam-mode-title">Modo examen</h3><p id="exam-mode-desc">Preguntas al azar, cronómetro y puntaje final como el examen real (45 preguntas / 90 min).</p></div>
+      </button>
+      <button class="mode" id="mode-failed" onclick="startFailed()">
+        <div class="ic" style="background:#3a0b0b">🔁</div>
+        <div><h3 id="failed-mode-title">Repaso de falladas</h3><p id="failed-desc">Repasá solo las que erraste.</p></div>
+      </button>
+    </div>
+    <div class="row" style="margin-top:16px;justify-content:center">
+      <button class="btn btn-ghost" onclick="resetProgress()">Reiniciar progreso</button>
+    </div>
+
+    <!-- Exam Requirements Section -->
+    <div style="margin-top:32px">
+      <h2 style="font-size:18px;margin-bottom:16px" id="req-title">Requisitos del Examen</h2>
+      <div class="req-box">
+        <h4 id="req-basics-title">ℹ️ Información Básica</h4>
+        <ul>
+          <li><b id="req-q-count">45</b> preguntas de opción múltiple o selección múltiple</li>
+          <li id="req-time">Tiempo: <b>90 minutos</b></li>
+          <li id="req-format">Formato: <b>Online Proctored</b> (Kryterion Secure Browser)</li>
+        </ul>
+      </div>
+      <div class="req-box">
+        <h4 id="req-hw-title">🖥️ Requisitos de Hardware</h4>
+        <ul>
+          <li id="req-hw-space">Espacio disponible: <b>mínimo 50 MB</b></li>
+          <li id="req-hw-res">Resolución: <b>1024 × 768 o superior</b></li>
+          <li id="req-hw-cam">Webcam y micrófono (USB si es externo)</li>
+          <li id="req-hw-kb">Teclado inglés (QWERTY)</li>
+        </ul>
+      </div>
+      <div class="req-box">
+        <h4 id="req-net-title">📡 Requisitos de Internet</h4>
+        <ul>
+          <li id="req-net-down">Descarga mínima: <b>1.0 Mbps</b></li>
+          <li id="req-net-up">Carga mínima: <b>1.0 Mbps</b></li>
+          <li id="req-net-ping">Ping: <b>&lt; 200ms</b></li>
+          <li id="req-net-jitter">Jitter: <b>&lt; 50ms</b></li>
+        </ul>
+      </div>
+      <div class="req-box">
+        <h4 id="req-os-title">💻 Sistemas Operativos Soportados</h4>
+        <ul>
+          <li><b>Windows:</b> Windows 10, 11</li>
+          <li><b>Mac:</b> Monterey, Ventura, Sonoma, Sequoia</li>
+          <li><b>Chromebook:</b> versión actual de Chrome con lista oficial de Google</li>
+          <li id="req-vm-warning">⚠️ <b>Las máquinas virtuales NO están permitidas</b></li>
+        </ul>
+      </div>
+      <div class="req-box">
+        <h4 id="req-browser-title">🔒 Secure Browser</h4>
+        <ul>
+          <li id="req-browser-desc">Requiere descargar e instalar el <b>Respondus Secure Browser</b> (puede requerir permisos de administrador)</li>
+          <li id="req-browser-warning">Recomendado usar una computadora personal (no de trabajo)</li>
+          <li id="req-browser-disable">Puede ser necesario deshabilitar: bloqueadores de pop-ups, antivirus, firewalls, VPN, Skype</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer-note" id="footer-note">Cuando la respuesta oficial y la más votada difieren, se muestran ambas y se marca ⚠.</p>
+  </section>
+
+  <!-- EXAM SETUP -->
+  <section id="exam-setup" class="hide">
+    <div class="card">
+      <h2 style="margin:0 0 4px;font-size:18px" id="setup-title">Configurar examen</h2>
+      <p style="color:var(--muted);font-size:13.5px;margin:0 0 20px" id="setup-subtitle">El examen real tiene 45 preguntas en 90 minutos.</p>
+      <div class="row" style="gap:22px;align-items:flex-end">
+        <div>
+          <label class="fld" id="setup-count-label">Cantidad de preguntas</label>
+          <input id="exam-n" class="num-input" type="number" min="1" value="45">
+        </div>
+        <div>
+          <label class="fld" id="setup-time-label">Tiempo (minutos)</label>
+          <input id="exam-min" class="num-input" type="number" min="1" value="90">
+        </div>
+      </div>
+      <div class="nav">
+        <button class="btn btn-ghost" onclick="goHome()" id="setup-back">← Volver</button>
+        <button class="btn btn-primary" onclick="startExam()" id="setup-start">Comenzar examen</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="hide">
+    <div class="qbar">
+      <span id="q-counter">1 / 1</span>
+      <span class="timer" id="timer"></span>
+    </div>
+    <div class="progress"><i id="q-progress"></i></div>
+    <div class="qmeta" id="q-meta"></div>
+    <div class="qtext" id="q-text"></div>
+    <div id="q-extra"></div>
+    <div class="opts" id="q-opts"></div>
+    <div id="q-feedback"></div>
+    <div class="nav">
+      <button class="btn btn-ghost" onclick="confirmQuit()" id="btn-quit">↤ Salir</button>
+      <button class="btn btn-primary" onclick="nextQuestion()" id="btn-next">Siguiente →</button>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="result" class="hide">
+    <div class="card">
+      <svg class="ring" id="ring-svg" viewBox="0 0 120 120" style="width:120px;height:120px">
+        <circle cx="60" cy="60" r="52" fill="none" stroke="var(--panel2)" stroke-width="8"/>
+        <circle id="ring-fg" cx="60" cy="60" r="52" fill="none" stroke="#22c55e" stroke-width="8" stroke-dasharray="327" stroke-dashoffset="0" stroke-linecap="round" style="transition:.6s"/>
+      </svg>
+      <div class="score-big" id="res-pct">0%</div>
+      <div class="score-sub" id="res-sub">0 de 0 correctas</div>
+      <button class="btn btn-blue" style="width:100%;margin-bottom:10px" onclick="reviewErrors()" id="btn-review">Ver errores</button>
+      <div id="res-review"></div>
+      <div class="nav">
+        <button class="btn btn-ghost" onclick="goHome()" id="result-home">← Home</button>
+        <button class="btn btn-primary" onclick="goHome()" id="result-again">Otra ronda →</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+const LANG = {
+  es: {
+    appTitle: 'Simulacro · Generative AI Engineer',
+    appSubtitle: 'Databricks · banco de preguntas ExamTopics',
+    statsTotal: 'Preguntas',
+    statsAnswered: 'Respondidas',
+    statsFailed: 'Falladas',
+    studyModeTitle: 'Modo estudio',
+    studyModeDesc: 'Recorré todas las preguntas (mezcladas) con feedback y explicación al instante.',
+    examModeTitle: 'Modo examen',
+    examModeDesc: 'Preguntas al azar, cronómetro y puntaje final como el examen real (45 preguntas / 90 min).',
+    failedModeTitle: 'Repaso de falladas',
+    failedModeDesc: 'Repasá solo las que erraste.',
+    resetBtn: 'Reiniciar progreso',
+    reqTitle: 'Requisitos del Examen',
+    reqBasicsTitle: 'ℹ️ Información Básica',
+    reqTime: 'Tiempo: <b>90 minutos</b>',
+    reqFormat: 'Formato: <b>Online Proctored</b> (Kryterion Secure Browser)',
+    footerNote: 'Cuando la respuesta oficial y la más votada difieren, se muestran ambas y se marca ⚠.',
+    setupTitle: 'Configurar examen',
+    setupSubtitle: 'El examen real tiene 45 preguntas en 90 minutos.',
+    setupCountLabel: 'Cantidad de preguntas',
+    setupTimeLabel: 'Tiempo (minutos)',
+    setupBack: '← Volver',
+    setupStart: 'Comenzar examen',
+    setupBtn: '✓ Finalizar',
+    setupNext: 'Siguiente →',
+    quitBtn: '↤ Salir',
+    nextBtn: 'Siguiente →',
+    correct: '✓ Correcto',
+    incorrect: '✗ Incorrecto',
+    official: 'Oficial ExamTopics',
+    voted: 'Más votada comunidad',
+    resultHome: '← Home',
+    resultAgain: 'Otra ronda →',
+    loadError: 'No se pudieron cargar las preguntas. Asegurate de que el archivo <b>qdata-genai.js</b> esté en la <b>misma carpeta</b> que este HTML.',
+  },
+  en: {
+    appTitle: 'Practice Exam · Generative AI Engineer',
+    appSubtitle: 'Databricks · ExamTopics Questions Bank',
+    statsTotal: 'Questions',
+    statsAnswered: 'Answered',
+    statsFailed: 'Failed',
+    studyModeTitle: 'Study Mode',
+    studyModeDesc: 'Go through all questions (randomized) with instant feedback and explanations.',
+    examModeTitle: 'Exam Mode',
+    examModeDesc: 'Random questions, timer, and final score like the real exam (45 questions / 90 min).',
+    failedModeTitle: 'Review Failed',
+    failedModeDesc: 'Practice only the questions you missed.',
+    resetBtn: 'Reset Progress',
+    reqTitle: 'Exam Requirements',
+    reqBasicsTitle: 'ℹ️ Basic Information',
+    reqTime: 'Time: <b>90 minutes</b>',
+    reqFormat: 'Format: <b>Online Proctored</b> (Kryterion Secure Browser)',
+    footerNote: 'When official and community voted answers differ, both are shown and marked ⚠.',
+    setupTitle: 'Configure Exam',
+    setupSubtitle: 'The real exam has 45 questions in 90 minutes.',
+    setupCountLabel: 'Number of questions',
+    setupTimeLabel: 'Time (minutes)',
+    setupBack: '← Back',
+    setupStart: 'Start Exam',
+    setupBtn: '✓ Finish',
+    setupNext: 'Next →',
+    quitBtn: '↤ Quit',
+    nextBtn: 'Next →',
+    correct: '✓ Correct',
+    incorrect: '✗ Incorrect',
+    official: 'Official ExamTopics',
+    voted: 'Community Voted',
+    resultHome: '← Home',
+    resultAgain: 'Another Round →',
+    loadError: 'Could not load questions. Make sure the <b>qdata-genai.js</b> file is in the <b>same folder</b> as this HTML.',
+  }
+};
+
+let currentLang = 'es';
+let session = {};
+let store = {answered:{}, failed:{}};
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('examLang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  updateUI();
+}
+
+function updateUI() {
+  const t = LANG[currentLang];
+  $('app-title').textContent = t.appTitle;
+  $('app-subtitle').textContent = t.appSubtitle;
+  $('st-total-label').textContent = t.statsTotal;
+  $('st-answered-label').textContent = t.statsAnswered;
+  $('st-failed-label').textContent = t.statsFailed;
+}
+
+function $(id){return document.getElementById(id)}
+function show(id){$('home').classList.add('hide');$('exam-setup').classList.add('hide');$('quiz').classList.add('hide');$('result').classList.add('hide');$(id).classList.remove('hide')}
+function refreshHome(){
+  if(!window.EXAM_QUESTIONS){$('load-error').classList.remove('hide');return}
+  $('st-total').textContent = window.EXAM_QUESTIONS.length;
+  loadStore();
+  let ans=0, fail=0;
+  window.EXAM_QUESTIONS.forEach(q=>{if(store.answered[q.id]) ans++;if(store.failed[q.id]) fail++});
+  $('st-answered').textContent = ans;
+  $('st-failed').textContent = fail;
+  $('mode-failed').disabled = fail===0;
+  show('home');
+}
+
+function loadStore(){
+  const saved = localStorage.getItem('examProgress');
+  if(saved) store = JSON.parse(saved);
+}
+
+function saveStore(){localStorage.setItem('examProgress', JSON.stringify(store))}
+
+function startStudy(){
+  if(!window.EXAM_QUESTIONS) return;
+  session = {mode:'study', list: shuffle([...window.EXAM_QUESTIONS]), idx:0, answers:{}};
+  show('quiz');
+  renderQuestion();
+  startTimer();
+}
+
+function startExam(){
+  if(!window.EXAM_QUESTIONS) return;
+  const n = parseInt($('exam-n').value) || 45;
+  const shuffled = shuffle([...window.EXAM_QUESTIONS]).slice(0, n);
+  session = {mode:'exam', list: shuffled, idx:0, answers:{}, timeLimit: parseInt($('exam-min').value)*60};
+  show('quiz');
+  renderQuestion();
+  startTimer();
+}
+
+function startFailed(){
+  if(!window.EXAM_QUESTIONS) return;
+  const failed = window.EXAM_QUESTIONS.filter(q => store.failed[q.id]);
+  if(!failed.length) return;
+  session = {mode:'study', list: shuffle(failed), idx:0, answers:{}};
+  show('quiz');
+  renderQuestion();
+  startTimer();
+}
+
+function showExamSetup(){show('exam-setup')}
+function goHome(){show('home');refreshHome()}
+
+let timerInterval;
+function startTimer(){
+  if(timerInterval) clearInterval(timerInterval);
+  const start = Date.now();
+  const timerEl = $('timer');
+  timerInterval = setInterval(()=>{
+    if(session.mode==='study') return;
+    const elapsed = Math.floor((Date.now()-start)/1000);
+    const remaining = session.timeLimit - elapsed;
+    if(remaining<=0){stopTimer();finishExam();return}
+    const mins = Math.floor(remaining/60);
+    const secs = remaining%60;
+    timerEl.textContent = `${mins}:${secs.toString().padStart(2,'0')}`;
+    if(remaining<=300) timerEl.classList.add('warn');
+  }, 100);
+}
+
+function stopTimer(){if(timerInterval) clearInterval(timerInterval)}
+
+function renderQuestion(){
+  const q = session.list[session.idx];
+  const total = session.list.length;
+  const t = LANG[currentLang];
+  $('q-counter').textContent = `${session.idx+1} / ${total}`;
+  $('q-progress').style.width = `${((session.idx)/total)*100}%`;
+  const qtext = currentLang==='es' ? q.question : q.questionEn;
+  const multi = q.correct.length>1 ? `<span class="multi">Elegir ${q.correct.length}</span>` : '';
+  $('q-text').innerHTML = qtext + multi;
+  const extra = currentLang==='es' ? (q.extra || '') : (q.extraEn || '');
+  $('q-extra').innerHTML = extra;
+
+  const prev = session.answers[q.id];
+  const opts = $('q-opts'); opts.innerHTML = '';
+  q.options.forEach((o,i)=>{
+    const div = document.createElement('div');
+    div.className = 'opt';
+    div.dataset.k = o.k;
+    const ohtml = currentLang==='es' ? o.html : (o.htmlEn || o.html);
+    div.innerHTML = `<span class="key">${o.k}</span><span class="otext">${ohtml}</span>`;
+    div.onclick = ()=>selectOpt(q, o.k);
+    opts.appendChild(div);
+  });
+
+  $('q-feedback').innerHTML = '';
+  if(session.mode==='exam'){
+    if(prev) markSelection(prev);
+  } else if(prev){
+    revealAnswer(q, prev);
+  }
+  updateNextBtn();
+}
+
+function updateNextBtn(){
+  const last = session.idx === session.list.length-1;
+  const t = LANG[currentLang];
+  $('btn-next').textContent = last ? (session.mode==='exam' ? 'Finalizar ✓' : 'Ver resultado ✓') : 'Siguiente →';
+}
+
+function markSelection(sel){
+  document.querySelectorAll('.opt').forEach(el=>{ el.classList.toggle('sel', sel.includes(el.dataset.k)); });
+}
+
+function selectOpt(q, k){
+  const isMulti = q.correct.length>1;
+  let sel = session.answers[q.id] ? session.answers[q.id].slice() : [];
+  if(session.mode==='exam'){
+    if(isMulti){ if(sel.includes(k)) sel = sel.filter(x=>x!==k); else sel.push(k); }
+    else sel = [k];
+    session.answers[q.id] = sel;
+    markSelection(sel);
+    return;
+  }
+  if(sel.length && !isMulti) return;
+  if(isMulti){
+    if(sel.includes(k)) sel=sel.filter(x=>x!==k); else sel.push(k);
+    session.answers[q.id]=sel;
+    markSelection(sel);
+    if(sel.length===q.correct.length){ recordAndReveal(q,sel); }
+  } else {
+    sel=[k]; session.answers[q.id]=sel; recordAndReveal(q,sel);
+  }
+}
+
+function recordAndReveal(q, sel){
+  const ok = sameSet(sel, q.correct.split(''));
+  store.answered[q.id]=true;
+  if(ok){ delete store.failed[q.id]; } else { store.failed[q.id]=true; }
+  saveStore();
+  revealAnswer(q, sel);
+}
+
+function revealAnswer(q, sel){
+  const correctSet = q.correct.split('');
+  const t = LANG[currentLang];
+  document.querySelectorAll('.opt').forEach(el=>{
+    el.classList.add('disabled'); el.onclick=null;
+    const k = el.dataset.k;
+    if(correctSet.includes(k)) el.classList.add('correct');
+    else if(sel.includes(k)) el.classList.add('wrong');
+    if(sel.includes(k)) el.classList.add('sel');
+  });
+  const ok = sameSet(sel, correctSet);
+  const votedDiff = q.voted && q.voted!==q.correct;
+  const expl = currentLang==='es' ? q.explanation : (q.explanationEn || q.explanation);
+  const fb = document.createElement('div');
+  fb.className = 'feedback ' + (ok?'good':'bad');
+  const votedLabel = currentLang==='es' ? 'Más votada comunidad' : 'Community Voted';
+  fb.innerHTML = `
+    <div class="head">${ok?'✓ Correcto':'✗ Incorrecto'}</div>
+    <div class="answers">
+      <span class="abadge official">Oficial: <b>${q.correct}</b></span>
+      ${q.voted ? `<span class="abadge voted">${votedLabel}: <b>${q.voted}</b></span>`:''}
+      ${votedDiff?`<span class="abadge" style="border-color:#f59e0b;color:#fcd34d">⚠ difieren</span>`:''}
+    </div>
+    <div class="expl">${expl}</div>`;
+  $('q-feedback').innerHTML = '';
+  $('q-feedback').appendChild(fb);
+}
+
+function nextQuestion(){
+  if(session.idx < session.list.length-1){ session.idx++; renderQuestion(); }
+  else { if(session.mode==='exam') finishExam(); else finishStudy(); }
+}
+
+function confirmQuit(){ if(confirm('¿Salir de esta sesión? Se perderá el progreso.')){ goHome(); } }
+
+function finishStudy(){
+  let correct=0, answered=0;
+  session.list.forEach(q=>{ const a = session.answers[q.id]; if(a){ answered++; if(sameSet(a, q.correct.split(''))) correct++; } });
+  showResult(correct, answered || session.list.length, true);
+}
+
+function finishExam(){
+  stopTimer();
+  let correct=0;
+  session.list.forEach(q=>{
+    const a = session.answers[q.id] || [];
+    store.answered[q.id]=true;
+    const ok = a.length && sameSet(a, q.correct.split(''));
+    if(ok){ correct++; delete store.failed[q.id]; } else { store.failed[q.id]=true; }
+  });
+  saveStore();
+  showResult(correct, session.list.length, false);
+}
+
+function showResult(correct, total, isStudy){
+  const pct = total? Math.round(correct/total*100):0;
+  $('res-pct').textContent = pct+'%';
+  $('res-sub').textContent = `${correct} de ${total} correctas` + (isStudy?' · modo estudio':'') + (pct>=70?' · ¡Aprobado! (≥70%)':'');
+  const circ = 327;
+  $('ring-fg').style.strokeDashoffset = circ - circ*(pct/100);
+  $('ring-fg').setAttribute('stroke', pct>=70?'#22c55e':pct>=50?'#f59e0b':'#ef4444');
+  $('res-review').innerHTML = '';
+  const wrong = session.list.filter(q=>!sameSet(session.answers[q.id]||[], q.correct.split('')));
+  $('btn-review').classList.toggle('hide', wrong.length===0);
+  $('btn-review').textContent = `Ver las ${wrong.length} que fallé`;
+  session._wrong = wrong;
+  show('result');
+}
+
+function reviewErrors(){
+  const box = $('res-review');
+  if(box.innerHTML){ box.innerHTML=''; $('btn-review').textContent = `Ver las ${session._wrong.length} que fallé`; return; }
+  $('btn-review').textContent = 'Ocultar';
+  box.innerHTML = '<h3 style="font-size:15px;margin:6px 0 12px">Repaso de errores</h3>';
+  session._wrong.forEach(q=>{
+    const yours = (session.answers[q.id]||[]).join(',')||'—';
+    const qtext = currentLang==='es' ? q.question : q.questionEn;
+    const expl = currentLang==='es' ? q.explanation : q.explanationEn;
+    const div = document.createElement('div');
+    div.className='review-item';
+    div.innerHTML = `<div class="ri-q"><b>#${q.id}</b> ${stripHeavy(qtext)}</div>
+      <div style="margin-bottom:8px"><span class="pill bad">Tu respuesta: ${yours}</span>
+      <span class="pill ok" style="margin-left:6px">Correcta: ${q.correct}</span></div>
+      <div class="expl">${expl}</div>`;
+    box.appendChild(div);
+  });
+}
+
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function sameSet(a,b){ if(!a||a.length!==b.length) return false; const s=new Set(b); return a.every(x=>s.has(x)); }
+function stripHeavy(html){ return html.replace(/<table[\s\S]*?<\/table>/g,'[tabla]').replace(/<pre[\s\S]*?<\/pre>/g,'[código]'); }
+function resetProgress(){ if(confirm('¿Borrar todo tu progreso?')){ store={answered:{},failed:{}}; saveStore(); refreshHome(); } }
+
+const savedLang = localStorage.getItem('examLang') || 'es';
+if(savedLang==='en') {
+  currentLang='en';
+  document.querySelectorAll('.lang-btn')[1].classList.add('active');
+  document.querySelectorAll('.lang-btn')[0].classList.remove('active');
+}
+updateUI();
+</script>
+<script src="qdata-genai.js"></script>
+<script>refreshHome();</script>
+</body>
+</html>
