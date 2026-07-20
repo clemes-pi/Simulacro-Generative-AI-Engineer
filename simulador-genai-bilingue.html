@@ -157,6 +157,7 @@
         <ul>
           <li><b id="req-q-count">45</b> preguntas de opción múltiple o selección múltiple</li>
           <li id="req-time">Tiempo: <b>90 minutos</b></li>
+          <li id="req-fee">Tarifa: <b>$200 USD</b></li>
           <li id="req-format">Formato: <b>Online Proctored</b> (Kryterion Secure Browser)</li>
         </ul>
       </div>
@@ -277,6 +278,7 @@ const LANG = {
     reqTitle: 'Requisitos del Examen',
     reqBasicsTitle: 'ℹ️ Información Básica',
     reqTime: 'Tiempo: <b>90 minutos</b>',
+    reqFee: 'Tarifa: <b>$200 USD</b>',
     reqFormat: 'Formato: <b>Online Proctored</b> (Kryterion Secure Browser)',
     footerNote: 'Cuando la respuesta oficial y la más votada difieren, se muestran ambas y se marca ⚠.',
     setupTitle: 'Configurar examen',
@@ -313,6 +315,7 @@ const LANG = {
     reqTitle: 'Exam Requirements',
     reqBasicsTitle: 'ℹ️ Basic Information',
     reqTime: 'Time: <b>90 minutes</b>',
+    reqFee: 'Fee: <b>$200 USD</b>',
     reqFormat: 'Format: <b>Online Proctored</b> (Kryterion Secure Browser)',
     footerNote: 'When official and community voted answers differ, both are shown and marked ⚠.',
     setupTitle: 'Configure Exam',
@@ -433,10 +436,11 @@ function renderQuestion(){
   const t = LANG[currentLang];
   $('q-counter').textContent = `${session.idx+1} / ${total}`;
   $('q-progress').style.width = `${((session.idx)/total)*100}%`;
-  const qtext = currentLang==='es' ? q.question : q.questionEn;
+  // FALLBACK: Si EN está vacío, muestra ES
+  const qtext = currentLang==='es' ? q.question : (q.questionEn || q.question);
   const multi = q.correct.length>1 ? `<span class="multi">Elegir ${q.correct.length}</span>` : '';
   $('q-text').innerHTML = qtext + multi;
-  const extra = currentLang==='es' ? (q.extra || '') : (q.extraEn || '');
+  const extra = currentLang==='es' ? (q.extra || '') : (q.extraEn || q.extra || '');
   $('q-extra').innerHTML = extra;
 
   const prev = session.answers[q.id];
@@ -575,8 +579,9 @@ function reviewErrors(){
   box.innerHTML = '<h3 style="font-size:15px;margin:6px 0 12px">Repaso de errores</h3>';
   session._wrong.forEach(q=>{
     const yours = (session.answers[q.id]||[]).join(',')||'—';
-    const qtext = currentLang==='es' ? q.question : q.questionEn;
-    const expl = currentLang==='es' ? q.explanation : q.explanationEn;
+    // FALLBACK: Si EN está vacío, muestra ES
+    const qtext = currentLang==='es' ? q.question : (q.questionEn || q.question);
+    const expl = currentLang==='es' ? q.explanation : (q.explanationEn || q.explanation || '');
     const div = document.createElement('div');
     div.className='review-item';
     div.innerHTML = `<div class="ri-q"><b>#${q.id}</b> ${stripHeavy(qtext)}</div>
@@ -599,8 +604,8 @@ if(savedLang==='en') {
   document.querySelectorAll('.lang-btn')[0].classList.remove('active');
 }
 updateUI();
+refreshHome();
 </script>
 <script src="qdata-genai.js"></script>
-<script>refreshHome();</script>
 </body>
 </html>
