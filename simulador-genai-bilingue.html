@@ -604,8 +604,13 @@ if(savedLang==='en') {
   document.querySelectorAll('.lang-btn')[0].classList.remove('active');
 }
 updateUI();
+</script>
+
+<!-- Cargar primero las preguntas, luego inicializar -->
+<script src="qdata-genai.js"></script>
+<script>
+// Ejecutar después de que se carguen las preguntas
 refreshHome();
 </script>
-<script src="qdata-genai.js"></script>
 </body>
 </html>
