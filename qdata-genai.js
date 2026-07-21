@@ -12,8 +12,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "CE",
     voted: "CE",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C, E. C: Elija una métrica de evaluación apropiada (como la exhaustividad o el NDCG) y experimente con cambios en la estrategia de segmentación, como dividir los segmentos por párrafos o capítulos. Elija la estrategia que ofrezca la mejor métrica de rendimiento. Más votado E: Cree una métrica LLM como juez para evaluar qué tan bien responde el fragmento más apropiado a las preguntas anteriores. Optimice los parámetros de segmentación en función de los valores de la métrica. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Choose an appropriate evaluation metric (such as recall or NDCG) and experiment with changes in the chunking strategy, such as spiltting chunks by paragraphs or chapters, Choose the strategy that gives the best performance metric. (ZEXZI) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 2,
@@ -27,8 +27,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Ingerir documentos de una fuente -> Indexar los documentos y guardarlos en Vector Search -> El usuario envía consultas a un LLM -> El LLM recupera los documentos relevantes -> El LLM genera una respuesta -> Evaluar el modelo -> Implementarlo usando Model Serving Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Ingest documents from a source ~ -> Index the documents and save to Vector Search ~ -> User submits queries against an LLM ~ -> LLM retrieves relevant documents -> LUM generates a response > Evaluate model -> Deploy It using Mode! Serving () This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 3,
@@ -42,8 +42,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Número de consultas de clientes procesadas por unidad de tiempo Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Number of customer inquiries processed per unit of time (TEIN This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 4,
@@ -57,8 +57,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Crear una herramienta para encontrar miembros de equipo disponibles según las fechas del proyecto. Integrar los perfiles de equipo en un almacén vectorial y usar el alcance del proyecto y el filtrado para realizar la recuperación y encontrar a los miembros de equipo disponibles que mejor se ajusten al perfil. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Create a tool for finding available team members given project dates. Embed team proes into a vector store and use the project scope and tering to perform retrieval ta find the available best matches team memners. (ESI) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 5,
@@ -72,8 +72,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Presentación de funciones Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Feature Serving (EEX This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 6,
@@ -87,8 +87,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Tablas de inferencia Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 7,
@@ -102,8 +102,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Gestionar adecuadamente los datos de origen, lo que incluye una revisión manual antes de introducirlos en el sistema RAG. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Curate upstream data properly that includes manual review before it is fed into the RAG system (EI This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 8,
@@ -117,8 +117,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Longitud del contexto 512: el modelo más pequeño es de 0,13 GB y la dimensión de incrustación es de 384. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: context length 512: smallest mode! Is 0.13GB and embedding dimension 384 QE5N20) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 9,
@@ -132,8 +132,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Elija un LLM más pequeño que sea específico del dominio. Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Pick 2 smaller LLM that is domain-specific This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 10,
@@ -148,8 +148,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "DE",
     voted: "DE",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D, E. D: detalle_de_llamada Más votado E: Transcripción Volumen Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D, E. D: call_detail E: transcript Volume QI) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 11,
@@ -163,8 +163,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: LangChain Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 12,
@@ -178,8 +178,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Comuníquese directamente con los curadores de datos después de haber comenzado a utilizar el modelo entrenado para informarles. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Reach out to the data curators directly after you have started using the trained model to let them know. (EXE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 13,
@@ -193,8 +193,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: `Un agente especializado en SQL puede entender el esquema de la base de datos, generar consultas correctas y ejecutarlas, proporcionando respuestas precisas. Esto es más eficiente que usar solo documentos o diccionarios.`,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Usar un agente especializado que maneje SQL y escriba consultas adecuadas Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 14,
@@ -208,8 +208,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Proporcione algunos ejemplos cortos del formato de salida deseado al sistema y/o al usuario. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 15,
@@ -223,8 +223,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Ajuste el modelo con sus datos, con la esperanza de que aprenda qué es apropiado y qué no. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 16,
@@ -238,8 +238,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Se le proporcionará una transcripción de la llamada del cliente en la que este pregunta sobre la disponibilidad del producto. Responda con "En stock" si el producto está disponible o "Agotado" si no lo está. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Youle given a custamer call ranscrt whee the cestomerinques about produc avait. Respons wh "eStock" the pockct is avatable ce “Out ot Stock It not CXE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 17,
@@ -253,8 +253,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Llama2-70B Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Llama?-708 (ED This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 18,
@@ -268,8 +268,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Recibirás correos electrónicos de clientes y deberás extraer la fecha, el correo electrónico del remitente y el ID del pedido. Devuelve la información extraída en formato JSON. Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: You will receive customer emails and need to extract date, sender email and order ID, Return the extracted information in JSON format. Here's an example: {"date": “April 16, 2024", “sender_ email’: “sarah lee92S@gmall.corn’, “order jd": “RE9B7D") This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 19,
@@ -283,8 +283,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Para la aplicación se requieren una solicitud, un recuperador y un LLM. La salida del recuperador se inserta en la solicitud, la cual se le proporciona al LLM para generar las respuestas. Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 20,
@@ -298,8 +298,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Escriba un mensaje del sistema para el agente que muestre las herramientas disponibles e incorpórelo a un sistema de agente que ejecute varias llamadas para resolver una consulta. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Write a system prompt for the agent listing avallable tools and bundle it into an agent system that runs number of calls to solve a query. (AEE) G. Instruct the LLM to respond with "RAG", "APT, of “TABLE” depending on the query, then use text parsing and conditional statements to resolve the query. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 21,
@@ -313,8 +313,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Divida la documentación de RR. HH. en fragmentos e incorpórelos a un almacén vectorial. Utilice la pregunta del empleado para recuperar los fragmentos de documentación que mejor coincidan y use el modelo LLM para generar una respuesta al empleado basada en la documentación recuperada. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Split HR documentation into chunks and embed into a vector store. Use the employee question lo retrieve best matched chunks of documentation, and use the LLM to generate a response to the employee based upon the documentation retrieved. (EXIT This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 22,
@@ -328,8 +328,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Utilizar un algoritmo de búsqueda de similitud semántica diferente. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Use a different semantic similarity search algorithm (ZENE) | > mone @ | This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 23,
@@ -343,8 +343,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Barandilla de seguridad Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 24,
@@ -358,8 +358,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: vsc.create_delta_sync_index() Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: vec.create delta_sync_index() (NI This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 25,
@@ -373,8 +373,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Agregar credenciales usando variables de entorno Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Add credentials using environment variables (EXIT) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 26,
@@ -388,8 +388,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Entrada: Registros de chat en línea; Salida: Botones que representan opciones para los detalles de la reserva. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Input: Online chat logs; Output: Buttons that represent choices for booking details (ZENO) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 27,
@@ -403,8 +403,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Escriba un modelo PyFunc de MLflow que tenga una función separada para procesar las indicaciones. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Write a MLflow PyFunc model that has a separate function to process the prompts (EERE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 28,
@@ -418,8 +418,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Implementar un filtro de seguridad que detecte cualquier entrada dañina y pedirle al LLM que responda que no puede ayudar. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Implement a safety ter that detects any harmful inputs and ask the LLM to respond that it is unable to assist (EYEE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 29,
@@ -433,8 +433,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: La exactitud y relevancia de las respuestas Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: The accuracy and relevance of the responses = This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 30,
@@ -448,8 +448,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Por favor, llame a los servicios de emergencia locales. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Please call your local emergency services. (Z) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 31,
@@ -464,8 +464,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "CD",
     voted: "CD",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C, D. C: Disminuir el tamaño de los fragmentos de los documentos incrustados. Más votado D: Reducir el número de registros recuperados de la base de datos vectorial. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C, D. C: Decrease the chunk size of embedded documents (NII D: Reduce the number of records retrieved from the vector database (ETI) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 32,
@@ -479,8 +479,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Aumentar la capacidad de procesamiento para mejorar la velocidad de procesamiento de las preguntas y permitir un análisis de mayor relevancia. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Increase the compute to improve processing speed of questions to allow greater relevancy analysis (ZENID This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 33,
@@ -494,8 +494,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Incluya en el mensaje del sistema que la aplicación no debe responder ninguna pregunta que no esté relacionada con SnoPen AI. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Include in the system prompt that the application is not supposed to answer any questions unrelated to SnoPen Al. (EXE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 34,
@@ -509,8 +509,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Aplanar el dataframe a un fragmento por fila, crear un identificador único para cada fila y guardarlo en una tabla Delta. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Flatten the dataframe to one chunk per row, create a unique identifier for each row, and save to a Delta table (ENE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 35,
@@ -524,8 +524,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Cree un conjunto de datos que permita probar por separado los componentes de recuperación y generación del sistema. Utilice las métricas de evaluación integradas de MLflow para evaluar dichos componentes. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Curate a dataset that can test the retrieval and generation components of the system separately. Use MLflow’s bullt In evaluation metrics to perform the evaluation ‘on the retrieval and generation components. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 36,
@@ -539,8 +539,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Registre el modelo usando MLflow durante el entrenamiento, registre directamente el modelo en el catálogo de Unity usando la API de MLflow e inicie un punto final de servicio. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Log the model using MLflow during training, directly register the model to Unity Catalog using the MLflow API, and start a serving endpoint (ENE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 37,
@@ -554,8 +554,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Implemente el modelo utilizando el pago por token, ya que viene con garantías de costos. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Deploy the model using pay-per-token throughput as it comes with cost guarantees (ESRI This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 38,
@@ -569,8 +569,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Utilice un neutralizador para normalizar el tono y el estilo de los documentos subyacentes. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Use a neutralizer to normalize the tone and style of the underlying documents (EEYEE3 This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 39,
@@ -584,8 +584,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Crear un agente con herramientas para consultas SQL de tablas Delta y búsqueda web, y proporcionar los valores recuperados a un LLM para la generación de la respuesta. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Create an agent with tools for SQL querying of Delta tables and web searching, provide retrieved values to an LLM for generation of response. (NEED This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 40,
@@ -599,8 +599,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Diversidad de respuestas Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Diversity of responses (ZENE This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 41,
@@ -614,8 +614,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: 1. Modelo de incrustación, 2. Búsqueda vectorial, 3. Indicación con contexto aumentado, 4. Modelo lineal de aprendizaje (LLM) generador de respuestas. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 42,
@@ -629,8 +629,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: CódigoLlama-34B Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Codel lama-348 QTE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 43,
@@ -644,8 +644,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: `Los embeddings personalizados con etiquetado semántico permiten que el chatbot entienda mejor el contexto específico del dominio de la empresa, mejorando significativamente la relevancia de los documentos seleccionados.`,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Crear un modelo de embedding personalizado con etiquetado semántico Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: flask 8, beautifuisoup This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 44,
@@ -659,8 +659,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: El chatbot debe implementarse como un flujo de trabajo LLM de varios pasos. Primero, se identifica el tipo de pregunta y luego se dirige al modelo apropiado. Si se trata de una pregunta sobre un evento próximo, se envía la consulta a un modelo de conversión de texto a SQL. Si se trata de la compra de entradas, el cliente debe ser redirigido a una plataforma de pago. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: The chatbot should be implemented 2s 2 multi-step LLM workflow. First, identify the type of question asked, then route the question to the appropriate model. If it's an upcoming event question, send the query ta a text-to-SQL model. if it's about ticket purchasing, the customer should be redirected to a payment platform. [mes vsee} This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 45,
@@ -674,8 +674,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: DBRX Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 46,
@@ -689,8 +689,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: whisper-large-v3 (1.6B) Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: whisper-large-v3 (1.68) (EERIE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 47,
@@ -704,8 +704,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Tablas de inferencia Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Inference Tables (ZEEI0) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 48,
@@ -719,8 +719,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Compare las similitudes del coseno de las incrustaciones de los resultados devueltos con las de una muestra representativa de entradas de prueba. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 49,
@@ -734,8 +734,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Utilice únicamente datos etiquetados explícitamente con una licencia abierta y asegúrese de que se cumplan los términos de la licencia. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 50,
@@ -749,8 +749,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Se le proporcionará una transcripción de una llamada de un cliente en la que este pregunta sobre la disponibilidad del producto. Clasifique la llamada como "Éxito" si el producto está disponible y como "Fallido" si no lo está. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 51,
@@ -765,8 +765,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "AB",
     voted: "AB",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A, B. A: Tiendas de vectores Más votado B: Memoria intermedia de conversación Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Vector Stores (EXIT 8. Conversation Buffer Memory [XIII This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 52,
@@ -780,8 +780,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Aplanar el marco de datos a un fragmento por fila, crear un identificador único para cada fila y habilitar la alimentación de cambios en la tabla Delta de salida. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 53,
@@ -795,8 +795,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: CodeLlama-34b-Instruct-hf Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: CodeLlame-34b-Instruct-nt (ERIE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 54,
@@ -810,8 +810,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Implementar un marco de trabajo como ReAct, que permite al LLM generar rastros de razonamiento y realizar acciones específicas para cada tarea, aprovechando herramientas externas si es necesario. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Implement 2 framework like ReA\ct, which allows the LLM to generate reasoning traces and perform task-specific actions that leveraye extemal tools if necessary. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 55,
@@ -825,8 +825,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: `Un reranker es una herramienta diseñada específicamente para clasificar documentos por relevancia en el contexto de la consulta, lo que mejora la precisión al filtrar contenido irrelevante antes de pasarlo al LLM.`,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Usar un reranker para ordenar los documentos según su relevancia Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 56,
@@ -840,8 +840,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Proporcione al LLM una indicación que le explique explícitamente que genere texto con el tono y estilo deseados. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Provide the LLM with a prompt that explicitly instructs it to generate text in the desired tone and style (ENE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 57,
@@ -855,8 +855,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Cree una cadena que primero utilice un LLM para clasificar el sentimiento y luego cambie el mensaje del sistema para la interacción del cliente LLM en función del sentimiento de la consulta inicial del cliente. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Create a chain which first uses an LLM to classity sentiment, then changes system prompt for the customer interaction LLM based upon the initial customer query sentiment. (20) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 58,
@@ -870,8 +870,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Utilice un token de acceso perteneciente a las entidades de servicio. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Use an access token belonging to service principals (ZEKE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 59,
@@ -886,8 +886,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "AD",
     voted: "AD",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A, D. A: Agregue el encabezado de sección como prefijo a los bloques. Más votado D: Aumentar el tamaño del fragmento del documento. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A, D. A: Add the section header as a prefix to chunks (EZ) D: Increase the document chunk size (I) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 60,
@@ -901,8 +901,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Aloje Llama Guard en la API del modelo Foundation y utilícelo para detectar respuestas no seguras. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Host Llama Guard on Foundation Model API and use it to detect unsafe responses. (EEIEE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 61,
@@ -916,8 +916,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Recibirás correos electrónicos de clientes y deberás extraer la fecha, el correo electrónico del remitente y el ID del pedido. Devuelve la información extraída en formato JSON. Aquí tienes un ejemplo: {"date":"16 de abril de 2024", "sender_email":" sarah.lee925@gmail.com ", "order_id":"RE987D"} Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 62,
@@ -931,8 +931,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: `Usar modelos de tamaño apropiado optimiza el costo y el rendimiento: modelos pequeños son rápidos y baratos para tareas simples, mientras que modelos grandes son necesarios para razonamiento complejo. Este enfoque mejora la eficiencia general del sistema.`,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Usar modelos pequeños para tareas simples y modelos grandes para tareas complejas Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 63,
@@ -946,8 +946,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Utilice indicaciones con pocos ejemplos para instruir al modelo sobre el formato de salida esperado. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Use few shat prompting to instruct the model on expected eutpult forrst CNET 8, Use zero shot prompting to Instruct the model on expected cutput format ©, Use zvro shot chain of thought prompting to prevent a verbose aulpet format This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 64,
@@ -961,8 +961,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Entrada: Registros de chat de atención al cliente; Salida: Agrupar los registros de chat por usuarios, seguido de un resumen de las interacciones de cada usuario y, finalmente, responder. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Input: Qastome service chat logs: Qutput: Groep the cst lags by ust, followed ty summarizing each user's interactions, thee respond CEI) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 65,
@@ -976,8 +976,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Seleccione un modelo de incrustación entrenado con conocimientos del dominio relacionado. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Pick an embedding model trained on retated domain knowledge EIRII This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 66,
@@ -991,8 +991,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Utilice MLflow para registrar el modelo directamente en Unity Catalog y habilite el acceso de LECTURA al modelo en el espacio de trabajo de desarrollo. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Use MLilow to log the model directly into Unity Catalog, and enable READ access in the dev workspace to the model. (EEN) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 67,
@@ -1006,8 +1006,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Puntuación de comprensión masiva del lenguaje multitarea (MMLU). Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 68,
@@ -1021,8 +1021,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Cree un punto final de servicio de características a partir de una especificación de características que haga referencia a una tienda en línea sincronizada desde la tabla Delta. Consulte el punto final de servicio de características como parte de la lógica del agente o la implementación de la herramienta. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Create a Feature Serving Endpoint from a FeatureSpec thal references an online store synced from the Delta table. Query the Feature Serving Endpoint as part of the agent logic / tool implementation. (ESTEE) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 69,
@@ -1036,8 +1036,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Compruebe la descripción del modelo y de los datos de entrenamiento para identificar si el modelo se ha entrenado con algún dato médico. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Check for the mode! and training data description to identify if the model is trained on any medical data. (RII) = This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 70,
@@ -1051,8 +1051,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Conserva todos los artículos de noticias porque la aplicación RAG necesita comprender el contenido no tecnológico para evitar responder preguntas sobre ellos. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Keep all news articles because the RAG application needs to understanc non-technological content to avoid answering questions about them. (ZEXETE) O. Filter out irrelevant news articles in the upstream document database. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 71,
@@ -1066,8 +1066,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: sopa hermosa Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 72,
@@ -1081,8 +1081,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Ingerir documentos de una fuente -> Indexar los documentos y guardarlos en Vector Search -> El usuario envía consultas a un LLM -> El LLM recupera los documentos relevantes -> El LLM genera una respuesta -> Evaluar el modelo -> Implementarlo mediante Model Serving Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Ingest documents from a source > Index the documents and save to Vector Search > User submits queries against an LLM > LLM retrieves relevant documents -> LLM generates a response > Evaluate model -> Deploy it using Mode! Serving (EEN) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 73,
@@ -1096,8 +1096,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Configure la limitación de velocidad en los puntos finales del modelo Foundation. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 74,
@@ -1111,8 +1111,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Incluir columnas de metadatos para la fecha y el tema del artículo para admitir el filtrado de metadatos. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 75,
@@ -1126,8 +1126,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Implemente el modelo utilizando el rendimiento aprovisionado, ya que incluye garantías de rendimiento. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 76,
@@ -1141,8 +1141,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Divida los manuales de instrucciones en fragmentos e incorpórelos a un almacén vectorial. Utilice la pregunta para recuperar los fragmentos del manual que mejor coincidan y use el modelo LLM para generar una respuesta al usuario basada en el manual recuperado. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Split instruction manuals into chunks and embed into a vector store, Use the question to retrieve best matched chunks of manual, and use the LLM to generate a response to the user based upon the manual retrieved. CEERI) 8. Create an interaction matrix of historical user questions and appliance instruction manuals. Use ALS to factorize the matrix and create embeddings. Calculate the embeddings of new queries and use them to find the best manual. Use an LLM to generate a response to the question based upon the manual retrieved, This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 77,
@@ -1156,8 +1156,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Implementar un filtro de seguridad que detecte cualquier entrada dañina y solicitar al LLM que responda que no puede ayudar. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: linplement a safety ter that detects any harmful inputs and ask the LLM to respond that it is unable to assist (EERE) fs se This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 78,
@@ -1171,8 +1171,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: El chatbot debe implementarse como un flujo de trabajo LLM de varios pasos. Primero, identifique el tipo de pregunta y luego diríjala al modelo apropiado. Si se trata de una pregunta sobre la tasa histórica de fallas, envíe la consulta a un modelo de conversión de texto a SQL. Si se trata de una pregunta de resolución de problemas, envíe la consulta a otro modelo que resuma el documento específico del equipo y genere la respuesta. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 79,
@@ -1186,8 +1186,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Utilice únicamente cuentas de redes sociales y noticias aprobadas para evitar que información tóxica inesperada llegue al programa LLM. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: Use only approved social media and news accounts to prevent unexpected toxic data from getting to the LLM. CEXZI) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 80,
@@ -1201,8 +1201,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Crea un conjunto de datos que permita probar por separado los componentes de recuperación y generación del sistema. Utiliza las métricas de evaluación integradas de MLflow para evaluar dichos componentes. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Curate a dataset that can test the retrieval and generation components of the system separately. Use MLflow’s built in evaluation metnes to perform the evaluation ‘on the retrieval ane generation components. (INIT This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 81,
@@ -1216,8 +1216,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "D",
     voted: "D",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es D. D: Proporcione un argumento de plantilla a PromptTemplate(). Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is D. D: Provide 3 template argument to ’rempt lemptate() This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 82,
@@ -1231,8 +1231,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Permite dividir tareas complejas en múltiples subtareas independientes. Esto posibilita que el asistente genere respuestas más completas y precisas. Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: It allows you to break down complex tasks into multiple independent sudtasks, This enables the assistant to generate more comprehensive and accurate retpenses 8. It allows you 10 reduce the latency of your applications. By having multiple chains participating in the response as 4 chain, you Increase the rate at which the response is generated This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 83,
@@ -1246,8 +1246,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: `Herramientas como Unstructured están diseñadas específicamente para manejar múltiples formatos de documentos (PDF, Word, imágenes, HTML) y extraer el contenido de manera consistente, preservando la estructura y significado del texto.`,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Usar una herramienta de conversión como Unstructured Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: MIEB Leadetboars This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 84,
@@ -1261,8 +1261,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Ajustar el tamaño del fragmento para que coincida con la ventana de contexto del modelo para maximizar la cobertura. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 85,
@@ -1276,8 +1276,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Implementar la función de resumen por ventanas con fragmentos superpuestos. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Implement windowed summarization with oveslapping chunks. (EI This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 86,
@@ -1291,8 +1291,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "C",
     voted: "C",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es C. C: Implementar un registro estructurado dentro del código del agente para capturar información detallada de la ejecución. Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is C. C: Implement structured logging within the agent's code to capture detailed execution information. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 87,
@@ -1306,8 +1306,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: El mensaje no analiza las variables de entrada del usuario. Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 88,
@@ -1321,8 +1321,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: 1. Defina o importe las herramientas. 2. Defina el agente. 3. Inicialice el agente con ReAct, el LLM y las herramientas. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: 1. Define or import the tools 2. Define the agent 3. inivalize the agent with Re/ct, the LLM, and the tools CEEXII This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 89,
@@ -1336,8 +1336,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: API REST mediante la biblioteca requests Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. B: REST API via requests library CEN This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 90,
@@ -1351,8 +1351,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "B",
     voted: "B",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es B. B: Utilice las listas de control de acceso (ACL) de Databricks para configurar los permisos de acceso a los modelos. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is B. This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 91,
@@ -1366,8 +1366,8 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Utilice un reordenador para ordenar los documentos según sus puntuaciones de relevancia. Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Use a reranker to order the documents based on the relevance scores, This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   },
   {
     id: 92,
@@ -1381,7 +1381,7 @@ window.EXAM_QUESTIONS = [
   ],
     correct: "A",
     voted: "A",
-    explanation: ``,
-    explanationEn: ``
+    explanation: `La respuesta correcta es A. A: Métricas operativas como el volumen de solicitudes, la latencia y los errores. Más votado Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
+    explanationEn: `The correct answer is A. A: Operational metrics like request volume, latency, and errors (2) This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
   }
 ];

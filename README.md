@@ -21,7 +21,6 @@ Simulador de examen **bilingüe** (español/inglés) con +92 preguntas reales de
 |---------|---------|
 | **Preguntas** | 45 preguntas de opción múltiple/selección múltiple |
 | **Tiempo** | 90 minutos |
-| **Tarifa** | $200 USD |
 | **Formato** | Online Proctored (Kryterion Secure Browser) |
 | **Validez** | 2 años |
 | **Recertificación** | Cada 2 años |
