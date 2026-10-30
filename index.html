@@ -85,7 +85,6 @@
   .abadge{font-size:12px;padding:5px 11px;border-radius:8px;background:var(--panel);border:1px solid var(--border)}
   .abadge b{color:var(--text)}
   .abadge.official b{color:#93c5fd}
-  .abadge.voted b{color:#86efac}
   .expl{font-size:13.5px;line-height:1.55;color:#cbd5e1}
   .expl b{color:var(--text)}
   .nav{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
@@ -198,7 +197,6 @@
       </div>
     </div>
 
-    <p class="footer-note" id="footer-note">Cuando la respuesta oficial y la más votada difieren, se muestran ambas y se marca ⚠.</p>
   </section>
 
   <!-- EXAM SETUP -->
@@ -280,7 +278,6 @@ const LANG = {
     reqTime: 'Tiempo: <b>90 minutos</b>',
 
     reqFormat: 'Formato: <b>Online Proctored</b> (Kryterion Secure Browser)',
-    footerNote: 'Cuando la respuesta oficial y la más votada difieren, se muestran ambas y se marca ⚠.',
     setupTitle: 'Configurar examen',
     setupSubtitle: 'El examen real tiene 45 preguntas en 90 minutos.',
     setupCountLabel: 'Cantidad de preguntas',
@@ -294,7 +291,6 @@ const LANG = {
     correct: '✓ Correcto',
     incorrect: '✗ Incorrecto',
     official: 'Oficial ExamTopics',
-    voted: 'Más votada comunidad',
     resultHome: '← Home',
     resultAgain: 'Otra ronda →',
     loadError: 'No se pudieron cargar las preguntas. Asegurate de que el archivo <b>qdata-genai.js</b> esté en la <b>misma carpeta</b> que este HTML.',
@@ -317,7 +313,6 @@ const LANG = {
     reqTime: 'Time: <b>90 minutes</b>',
 
     reqFormat: 'Format: <b>Online Proctored</b> (Kryterion Secure Browser)',
-    footerNote: 'When official and community voted answers differ, both are shown and marked ⚠.',
     setupTitle: 'Configure Exam',
     setupSubtitle: 'The real exam has 45 questions in 90 minutes.',
     setupCountLabel: 'Number of questions',
@@ -331,7 +326,6 @@ const LANG = {
     correct: '✓ Correct',
     incorrect: '✗ Incorrect',
     official: 'Official ExamTopics',
-    voted: 'Community Voted',
     resultHome: '← Home',
     resultAgain: 'Another Round →',
     loadError: 'Could not load questions. Make sure the <b>qdata-genai.js</b> file is in the <b>same folder</b> as this HTML.',
@@ -514,17 +508,13 @@ function revealAnswer(q, sel){
     if(sel.includes(k)) el.classList.add('sel');
   });
   const ok = sameSet(sel, correctSet);
-  const votedDiff = q.voted && q.voted!==q.correct;
   const expl = currentLang==='es' ? q.explanation : (q.explanationEn || q.explanation);
   const fb = document.createElement('div');
   fb.className = 'feedback ' + (ok?'good':'bad');
-  const votedLabel = currentLang==='es' ? 'Más votada comunidad' : 'Community Voted';
   fb.innerHTML = `
     <div class="head">${ok?'✓ Correcto':'✗ Incorrecto'}</div>
     <div class="answers">
       <span class="abadge official">Oficial: <b>${q.correct}</b></span>
-      ${q.voted ? `<span class="abadge voted">${votedLabel}: <b>${q.voted}</b></span>`:''}
-      ${votedDiff?`<span class="abadge" style="border-color:#f59e0b;color:#fcd34d">⚠ difieren</span>`:''}
     </div>
     <div class="expl">${expl}</div>`;
   $('q-feedback').innerHTML = '';

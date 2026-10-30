@@ -107,7 +107,6 @@ npx http-server
     // ...
   ],
   correct: "A",                       // Respuesta correcta
-  voted: "A",                         // Más votada por comunidad
   explanation: `Explicación`,         // En español
   explanationEn: `Explanation`        // En inglés
 }
