@@ -342,6 +342,7 @@ function setLanguage(lang) {
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
   updateUI();
+  if (!$('quiz').classList.contains('hide') && session.list?.length) renderQuestion();
 }
 
 function updateUI() {

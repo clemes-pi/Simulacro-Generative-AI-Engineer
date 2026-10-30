@@ -967,17 +967,17 @@ window.EXAM_QUESTIONS = [
   {
     id: 65,
     question: `Un ingeniero de IA generativa está desarrollando una aplicación RAG y desea experimentar con diferentes modelos de incrustación para mejorar su rendimiento.`,
-    questionEn: `A Generative AI Engineer is developing a RAG application and would like to experiment with different embedding models to improve the application performance. Which strategy for picking an embedding model should they choose?`,
+    questionEn: `A generative AI engineer is building a RAG application and wants to compare different embedding models to improve its performance. Which approach should they use to select an embedding model?`,
     options: [
-    {k:"A", html: `Elija un modelo de incrustación con soporte multilingüe para dar respuesta a posibles preguntas de usuarios multilingües.`, htmlEn: `Pick an embedding model with multilingual support to support potential muftlingual user questions`},
-    {k:"B", html: `Elija el programa LLM abierto más reciente y de mejor rendimiento lanzado hasta el momento.`, htmlEn: `Pick the most recent and most pertormant open LLM released at the time`},
-    {k:"C", html: `Seleccione un modelo de incrustación entrenado con conocimientos del dominio relacionado. `, htmlEn: `Pick an embedding model trained on retated domain knowledge EIRII`},
-    {k:"D", html: `Elija el modelo de incrustación mejor clasificado en la tabla de posiciones del Massive Text Embedding Benchmark (MTEB) alojada por HuggingFace.`, htmlEn: `Pick the embedding madel ranked highest an the Massive Text Embedding Benchmark (MMTEB) leaderboard hosted by HuggingF ace`},
+    {k:"A", html: `Elija un modelo de incrustación con soporte multilingüe para dar respuesta a posibles preguntas de usuarios multilingües.`, htmlEn: `Choose an embedding model with multilingual support to accommodate users who may ask questions in different languages.`},
+    {k:"B", html: `Elija el programa LLM abierto más reciente y de mejor rendimiento lanzado hasta el momento.`, htmlEn: `Choose the newest, highest-performing open-source LLM available.`},
+    {k:"C", html: `Seleccione un modelo de incrustación entrenado con conocimientos del dominio relacionado. `, htmlEn: `Choose an embedding model trained on data from the relevant domain.`},
+    {k:"D", html: `Elija el modelo de incrustación mejor clasificado en la tabla de posiciones del Massive Text Embedding Benchmark (MTEB) alojada por HuggingFace.`, htmlEn: `Choose the embedding model with the highest score on the Massive Text Embedding Benchmark (MTEB) leaderboard hosted by Hugging Face.`},
   ],
     correct: "C",
     voted: "C",
     explanation: `La respuesta correcta es C. C: Seleccione un modelo de incrustación entrenado con conocimientos del dominio relacionado.  Esta opción es la que mejor cumple los requisitos técnicos y de negocio del escenario. Aplica la capacidad de IA generativa, RAG, agentes, MLflow o Databricks más adecuada, mientras que las demás alternativas no resuelven la restricción planteada, agregan complejidad innecesaria o resultan menos apropiadas para el caso de uso.`,
-    explanationEn: `The correct answer is C. C: Pick an embedding model trained on retated domain knowledge EIRII This option best satisfies the technical and business requirements in the scenario. It applies the most appropriate Generative AI, RAG, agent, MLflow, or Databricks capability, while the alternatives either fail to address the stated constraint, add unnecessary complexity, or are less suitable for the use case.`
+    explanationEn: `The correct answer is C: choose an embedding model trained on data from the relevant domain. A domain-specific model is more likely to capture the terminology and meaning needed by this RAG application than a general-purpose model selected only for multilingual support or a high benchmark score.`
   },
   {
     id: 66,
